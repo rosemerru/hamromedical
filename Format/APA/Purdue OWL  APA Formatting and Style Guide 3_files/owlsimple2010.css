@@ -1,0 +1,189 @@
+/* CSS Document */
+
+/*Simple styles for all browsers, including basic typography*/
+body {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+p, ul {
+	font-size: 12px;
+	line-height: 1.4;
+	}
+ul li {
+	padding-top: 5px;
+	}
+	
+	
+div.questionofweek {
+	font-weight: bold;
+	}
+
+
+/* change color based on OWL pages */
+h1 {
+	padding: 0px 0px 0px 0px;
+	font-size: 28px;
+	line-height: 50%;
+	color: #603c14;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+h1.subspage {
+	font-size: 12px;
+	color: #999999;
+	}
+h1.bloghead {
+	margin: 0px;
+	padding: 0px 0px 5px 0px;
+	font-size: 24px;
+	}
+h2 {
+	font-size: 26px;
+	padding-top: 8px;
+	margin: 0px;
+	color: #603c14;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+pre {
+	color: #0000FF;
+	}
+	
+	
+/*Normal Text Markup*/
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #603c14;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+h4 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #603c14;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h5 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #603c14;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 10px 0px -10px 0px;
+	text-decoration:none;
+}
+span.red {
+	font-weight: bold;
+	color: #ae0000;
+	}
+span.blue {
+	font-weight: bold;
+	color:#3300CC;
+	}
+span.green {
+	font-weight: bold;
+	color: #2e5c00;
+	}
+span.orange {
+	font-weight: bold;
+	color: #7a4901;
+	}
+	
+	
+div.hint {
+	width: 300px;
+	border: 1px solid #000000;
+	padding: 20px;
+	margin-left: 100px;
+	background-color:#CCCCCC;
+	font-weight: bold;
+	}
+
+div.example {
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	margin: 0px 0px 25px 25px;
+	line-height: 2;
+	}
+li div.example {
+	margin: 0px;
+	}
+div.example p {
+	text-indent: 0px;
+	line-height: 2;
+	margin: 0;
+	}
+div.example p.citation {
+	line-height: 2;
+	padding-left: 25px;
+	text-indent: -25px;
+	}
+div.sampleoutline {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	}
+div.sampleoutline ol li {
+	list-style-type: upper-roman;
+	padding: 6px 0px 0px 0px;
+	}
+div.sampleoutline ol li ol li {
+	list-style-type: upper-alpha;
+	}
+div.sampleoutline ol li ol li ol li {
+	list-style-type: decimal;
+	}
+div.sampleoutline ol li ol li ol li ol li {
+	list-style-type: lower-alpha;
+	}
+div.sampleoutline ol li ol li ol li ol li ol li {
+	list-style-type: lower-roman;
+	}
+div.samplepaper {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 13px;
+	width: 300px;
+	min-height: 400px;
+	padding: 40px;
+	margin-left: 50px;
+	border: 1px solid #000000;
+	background-color: #FFFFCC;
+	}
+div.samplepaper p {
+	text-indent: 0px;
+	}
+div.samplepaper p.indent {
+	text-indent: 25px;
+	}
+div.samplepaper p.right {
+	text-align: right;
+	}
+div.samplepaper p.center {
+	text-indent: 0px;
+	text-align: center;
+	}
+div.samplepaper p.citation {
+	line-height: 2;
+	padding-left: 25px;
+	text-indent: -25px;
+	}
+
+/*Special styles for markup documentation*/
+p.selected {
+	color: #FFFFFF;
+	background-color: #0000FF
+	}
+p.citation {
+	line-height: 2;
+	}
+p.indent {
+	text-indent: 25px;
+	}
+.special {
+	text-decoration:none;
+	}
+.wc {
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	margin: 0px 0px 0px 50px;
+	line-height: 2;
+	text-align:center;
+}

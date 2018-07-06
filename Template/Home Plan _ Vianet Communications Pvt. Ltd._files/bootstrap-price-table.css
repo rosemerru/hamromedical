@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+.columns {
+    /*margin-bottom:20px;*/
+    margin-bottom:0px;
+    cursor:pointer;
+}
+.columns:hover .header {
+    background-color: #b61c21;
+    /*border-top-left-radius: 20px;
+    border-top-right-radius: 20px;*/
+}
+.columns:hover .grey {font-size:22px; color:#00629b; }
+.columns:hover .price { color:#333333;border-top-left-radius: 15px;border-top-right-radius: 15px;}
+
+.columns:hover .button {
+    background-color: #b61c21;
+    color: #fff;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #ec1c24;
+    color: white;
+    font-size: 22px;
+    transition: all .2s ease-in-out;
+}
+
+.price li {
+    border-bottom: 1px solid #DEDEDE;
+    padding:10px;
+    text-align: center;
+}
+
+.highlight { transition: 0.3s;}
+.highlight:hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+
+.price .grey {
+    background-color: #eee;
+    color: #337ab7;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid #b61c21;
+    color: #b61c21;
+    font-size: 18px;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out 0s;
+}
+.button:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+
+
+
+/*PRICING TABLE*/
+.tab-content > .active {
+    display: block;
+    overflow: hidden;
+}
+
+.pricing-table-wrapper .package-speed{
+    font-size: 20px;
+    /*font-weight: bold;*/
+    line-height: 20px;
+}
+.pricing-table-wrapper .package-data{
+    font-size: 20px;
+    /*font-weight: bold;*/
+}
+.pricing-table-wrapper .text-most-popular {
+    /*font-size: 18px;*/
+    color: #F4BB3A;
+    font-style: italic;
+}
+
+/*.pricing-table-wrapper .price-table-row .columns {
+    height: 600px;
+    vertical-align: bottom;
+}
+*/
+
+
+
+
+.home .pricing-table-wrapper .price-table-row {
+    /*display: inline-flex;*/
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    min-height: 452px;
+}
+.col-product-table {
+    align-self: flex-end;
+}
+
+
+.price-table-fibernet-soho-plan .pricing-table-wrapper .price-table-row,
+.price-table-fiberhome-unlimited-plan .pricing-table-wrapper .price-table-row {
+    /*display: inline-flex;*/
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    min-height: 380px;
+}
+.price-table-fiberhome-data-plan .pricing-table-wrapper .price-table-row {
+    /*display: inline-flex;*/
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    min-height: 429px;
+}
+
+
+.price-table-fiberhome-internet-plus-tv-plan .pricing-table-wrapper .price-table-row {
+    /*display: inline-flex;*/
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    min-height: 471px;
+}
+
+.price-table-fiberhome-internet-plus-tv-plan #tv-internet-plan1 .pricing-table-wrapper .price-table-row,
+.price-table-fiberhome-internet-plus-tv-plan #tv-internet-plan2 .pricing-table-wrapper .price-table-row {
+    /*display: inline-flex;*/
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    min-height: 421px;
+}
+
+.price-table-fibernet-nettv-plan .pricing-table-wrapper .price-table-row {
+    /*display: inline-flex;*/
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    min-height: 600px;
+}
+
+
+
+
+/* 
+.price-table-fiberhome-data-plan
+.price-table-fiberhome-internet-plus-tv-plan
+.price-table-fiberhome-unlimited-plan
+.price-table-fibernet-soho-plan
+*/
+
+
+.pricing-table-wrapper .price-table-row .price span.asterisk {
+    bottom: 8px;
+    color: #ed1c24;
+    font-size: 15px;
+    position: relative;
+}
+
+.package_pricetable_speed {
+    font-size: 22px;
+}

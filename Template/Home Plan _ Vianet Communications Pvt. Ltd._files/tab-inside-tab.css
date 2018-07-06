@@ -1,0 +1,96 @@
+ .tabsandpills-prodcut-list section {
+        margin: 20px 20px 50px;
+        color: #231F20;
+      }
+      /*Main Top Level Tabs*/
+      .nav-tabs.main-tabs > li.active > a, 
+      .nav-tabs.main-tabs > li.active > a:focus, 
+      .nav-tabs.main-tabs > li.active > a:hover {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        background-color: #fff;
+        border-color: #ddd #ddd transparent;      
+        border-width: 0px;
+        color: #ec1c24;
+        cursor: default;
+      }
+      .nav-tabs.main-tabs > li a {
+        color: #333333;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+      .nav-tabs.main-tabs {
+        border-bottom: 0px solid #ddd;
+      }
+
+      .nav-tabs.main-tabs li a strong {
+        background: #ec1c24 none repeat scroll 0 0;
+        border: 10px solid #fff;
+        display: block;
+        height: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 11px;
+        text-align: center;
+        width: 130px;
+      }
+      .tabsandpills-prodcut-list ul.nav.nav-tabs.main-tabs li.active a strong{
+          background: #b61c21 none repeat scroll 0 0;
+          border: 1px solid #fff;
+      }
+
+
+      .nav-tabs.main-tabs li a strong img {
+        height: auto;
+        max-width: 100%;
+      }
+
+
+
+      /*Second Level Tabs*/
+      .nav-tabs.main-tabs > li.active > a, 
+      .nav-tabs.main-tabs > li.active > acus, 
+      .nav-tabs.main-tabs > li.active > a:hover {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        background-color: #fff;
+        border-color: #ddd #ddd transparent;
+        border-width: 0;
+        color: #ec1c24;
+        cursor: default;
+      }
+
+
+
+
+.tabsandpills-prodcut-list .tab-content {
+  margin-top: 25px;
+}
+
+.tabsandpills-prodcut-list .nav-tabs > li > a:hover {
+    border-color: transparent;
+}
+.tabsandpills-prodcut-list .nav > li > a:focus, 
+.tabsandpills-prodcut-list .nav > li > a:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.tabsandpills-prodcut-list .nav-tabs > li.nav-item a {
+  border: 1px solid #cccccc;
+  border-radius: 4px 4px 0 0;
+  color: #337ab7;
+}
+.tabsandpills-prodcut-list .nav-tabs > li.nav-item.active > a, 
+.tabsandpills-prodcut-list .nav-tabs > li.nav-item.active > a:focus, 
+.tabsandpills-prodcut-list .nav-tabs > li.nav-item.active > a:hover {
+  background-color: #ec1c24;
+  color: #ffffff;
+}

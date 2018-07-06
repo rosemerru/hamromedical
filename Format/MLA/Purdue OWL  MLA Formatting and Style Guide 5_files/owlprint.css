@@ -1,0 +1,166 @@
+/*Thanks for taking the time to look at our CSS! Please note
+that this design (code and supporting images) is copyrighted
+material; you're free to study it to help yourself learn CSS,
+but you may not reproduce the code on your own pages.
+
+This design by Jeff Bacha, adpated from Karl Stolley and Dana Driscoll; 
+if you have question, use our feedback page at 
+https://owl.english.purdue.edu/owl/resource/582/01/
+
+Finally, CSS shortcuts have been avoided in many cases
+to make for easier editing for future OWL webmasters*/
+
+/*OWL CSS - Basic stylesheet for printing */
+
+body {
+	font-family: "Times New Roman", Roman, serif;
+	font-size: 12pt;
+	color: #000000;
+	/*background-color: #FFFFFF;
+	margin: 25px;*/
+	margin: .3in .6in .3in .6in;
+	padding: 0in;
+}
+
+/*Typography*/
+div#content a, div#content a:visited, div#content a:active {
+	font-weight: bold;
+	text-decoration: underline;
+	}
+p.postinfo {
+	font-family: "Courier New", Courier, mono;
+	}
+	
+	
+/* Hiding navigation, breadcrumbs, basic design, and search information */	
+div#navcontainer, div#search, div#navsidecontainer, div#sidenav, div#closer, div#sidenavcontainer, div#breadcrumbs , div#navbottom {
+	display: none;	
+	width:0px;
+	}
+
+div#opener, div#pagetype, div#mediainfo, div#toolbar, div#topnav, div#hrbar{
+	display: none;
+	}
+	
+
+/* Hide the side navigation */	
+div#sidenav ul li {
+	display: none;
+	}
+	
+div#sidenavcontainer .noshow {
+	display: none;
+	}	
+	
+	
+/* Displays information for OWL users for printing */
+div#printinfo{
+	font-style: italic;
+	margin-bottom: .5in;
+	}
+	
+div#printinfo img {
+	float: left;
+	margin-right: .25in;
+	}
+		
+	
+/*Basic divs art and positioning*/
+div#container {
+	width: auto;
+}
+
+div#content, div#content p, div#content h1, div#content h2, div#content h3, div#content h4{
+	width: auto;
+}
+
+div#content p, div#content ol, div#content ul {
+	line-height: 16pt;
+	}
+
+/*modify this based on OWL area */
+
+	
+div#resourceinfo {
+	padding: .15in;
+	font-size: 10pt;
+	border: 1px solid #000000;
+	}
+	
+div#resourceinfo p.description {
+	padding-top: 0.2in;
+	font-size: 12pt;
+	font-style: italic;	
+	}
+	
+div#maintext p, div#maintext ol, div#maintext ul {
+	line-height: 16pt;
+	}
+	
+
+
+/*div#dtreenav, noscript {
+	display: none;
+	}
+*/
+
+div#footer {
+	border-top: 2pt solid black;
+	margin-top: 1in;
+	color: #666666;
+	font-size: 10pt;
+	}
+
+	
+
+	
+/*Image handling stuff*/
+
+/*img {
+	border: 1pt solid black;
+	}*/
+	
+	
+div.imgfloat {
+	background-color: #EEEEEE;
+	margin: 4px 7px 5px 0px;
+	padding: 0px;
+	float: left;
+	border-top: 1pt solid black;
+	border-right: 1pt solid black;
+	border-left: 1pt solid black;
+	}
+div.imgnofloat {
+	background-color: #EEEEEE;
+	margin: 4px 7px 5px 0px;
+	padding: 0px;
+	border-top: 1pt solid black;
+	border-right: 1pt solid black;
+	border-left: 1pt solid black;
+	}
+div.imgfloat img, div.imgnofloat img  {
+	border-bottom: 1pt solid black;
+	margin: 0px 0px -2px 0px;
+	/*-2px on the bottom margin fixes goof in firefox*/
+	padding: 0px;
+	}
+	
+div.imgfloat div.caption, div.imgnofloat div.caption {
+	border-bottom: 1pt solid black;
+	}
+	
+div#maintext div.imgfloat div.caption p, div#maintext div.imgnofloat div.caption p {
+	margin: 3px 4px 3px 4px;
+	padding: 0px;
+	font-size: 10px;
+	line-height: 11px;
+	color: #444444;
+	}
+	
+.noprint {
+	display: none;
+	}
+
+div#pagebreak {
+	page-break-after:always;
+	}

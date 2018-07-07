@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.applemenu div.silverheader a{
+	color: #EA600C;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding-left: 20px;
+	text-decoration: none;
+	font-family: Tahoma, "Lucida Grande", "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 11px;
+	text-transform: capitalize;
+	background-image: url(../images/bg_acc_inactive.gif);
+	height: 20px;
+	padding-top: 12px;
+	padding-right: 0;
+	padding-bottom: 5px;
+}
+
+
+.applemenu div.selected a, .applemenu div.silverheader a:hover{
+	background-image: url(../images/bg_acc_active.gif);
+	color: #727272;
+	font-weight: bold;
+}
+
+.applemenu div.submenu{ /*DIV that contains each sub menu*/
+	background: #fff;
+	height: 205px; /*Height that applies to all sub menu DIVs. A good idea when headers are toggled via "mouseover" instead of "click"*/
+}

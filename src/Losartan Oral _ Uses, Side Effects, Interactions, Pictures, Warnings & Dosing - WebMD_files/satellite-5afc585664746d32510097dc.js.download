@@ -1,0 +1,15 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  $(function(){
+  if(webmd && webmd.cookie && !webmd.cookie.exists('gdpreu')){
+    // stop overlays from triggering
+    if(webmd.p && webmd.p.pim) {
+      webmd.p.pim.increment();
+    }
+
+    require(["webmd.gdpr/1/webmd.gdpr"], function(webmd_gdpr) {
+      webmd_gdpr.init();
+    });
+  }
+});
+
+});

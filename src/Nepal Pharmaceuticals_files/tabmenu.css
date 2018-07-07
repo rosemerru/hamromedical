@@ -1,0 +1,29 @@
+.htabs {
+	background: #f3f3f3;
+	height: 21px;
+	line-height: 16px;
+	border-bottom: 1px solid #DDDDDD;
+}
+.htabs a {
+	background: #e8e8e8 url(../images/bgrep/box-head.gif) repeat-x 0 0;
+	border-left: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
+    border-top: 1px solid #D8D8D8;
+	padding: 2px 15px 2px;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	color: #333333;
+	margin-right: 2px;
+	display: none;
+}
+.htabs a.selected {
+	background: #ffffff;
+	border-radius: 4px 4px 0 0; 
+	color: #333333;
+	padding: 3px 15px 2px;
+}
+
+

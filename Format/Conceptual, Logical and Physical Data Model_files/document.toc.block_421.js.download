@@ -1,0 +1,82 @@
+$(document).ready(function() {
+	$.ajax({url:$("#toc").attr("__toc"),success:function(data) {
+		$("#toc").html(data);
+
+		$("#tocCombo").change(function() {
+			var targetY = 0;
+			var tocPaneObj = $("#tocPane");
+			var tocPartObj = $("p#"+this.value);
+			if (tocPartObj.length==1) {
+				var posY = tocPartObj.position().top;
+				var targetY = posY - tocPaneObj.position().top + tocPaneObj.scrollTop();
+			}
+			tocPaneObj.animate({scrollTop: targetY}, 500);
+		});
+	
+		var tocPaneObj = $("#tocPane");
+		// scroll to current part
+		var tocHeight = Math.max($(window).height() - $(".leftMenu").position().top - 80, 300);
+		if ($.browser.safari && $.browser.version.substr(0,3)<525) {
+			tocHeight = 300;
+		}
+		tocPaneObj.height(tocHeight);
+		var lCurrentSectionAnchorObj = $("a[href='"+window.location.pathname+"']");
+		if (lCurrentSectionAnchorObj.length>0) {
+			tocPaneObj.scrollTop(lCurrentSectionAnchorObj.position().top-180);
+		}
+	}});
+});
+
+function restoreRememberedExpandedChapters() {
+	var docID = $("body").attr("__document");
+	if (!docID) {
+		return;
+	}
+	var expanded = getCookie(docID+"_expanded");
+	if (!expanded) {
+		var obj = $(".sectionExpander");
+		if (obj.length==1) {
+			$(obj[0]).prev().toggleClass("inlineExpanded");
+			$(obj[0]).next().slideToggle("normal");
+		}
+		return;
+	}
+	expanded = ")"+expanded+"(";
+	var chapters = expanded.split(")(");
+	for (var i=0; i<chapters.length; i++) {
+		var ch = chapters[i];
+		if (ch.length>0) {
+			var obj = $(".sectionExpander + div[__chapter='"+ch+"']");
+			obj.css("display", "block");
+			obj.prev().toggleClass("inlineExpanded");
+		}
+	}
+}
+
+function rememberExpandedChapter(aChapterID, isExpanded) {
+	var value = "("+aChapterID+")";
+	var docID = $("body").attr("__document");
+	if (!docID) {
+		return;
+	}
+	var expanded = getCookie(docID+"_expanded");
+	if (isExpanded) {
+		if (!expanded) {
+			expanded = value;
+		} else if (expanded.indexOf(value)<0){
+			expanded += value;
+		}
+	} else {
+		if (!expanded) {
+			expanded = "";
+		} else {
+			var valueIndex = expanded.indexOf(value);
+			if (valueIndex>=0) {
+				expanded = expanded.substring(0, valueIndex) + expanded.substring(valueIndex+value.length);
+			}
+		}
+	}
+	
+	var expires = new Date(new Date().getTime() + (1000*60*60*24 *60));
+	setCookie(docID+"_expanded", expanded, expires, "/");
+}

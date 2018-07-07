@@ -1,0 +1,14 @@
+/**/ _ate.cbs.rcb_axi20({
+   "share": {
+      "comment_count": 0,
+      "share_count": 0
+   },
+   "og_object": {
+      "id": "941240275991018",
+      "description": "Transcribe a logical ERD into physical ERD. Then, compare the two models and trace the differences between them.",
+      "title": "Comparing Logical and Physical ERD",
+      "type": "website",
+      "updated_time": "2018-02-11T14:27:53+0000"
+   },
+   "id": "https://www.visual-paradigm.com/tutorials/compare-logical-physical-erd.jsp"
+});

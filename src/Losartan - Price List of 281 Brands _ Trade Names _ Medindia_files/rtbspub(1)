@@ -1,0 +1,1 @@
+window.rtbsBidA = (typeof window.rtbsBidA === 'object') ? window.rtbsBidA : {}; window.rtbsBidA["504532688"] = {no_bid:true,winReason:4,dma:"",cc:"NP",rc:""}; 

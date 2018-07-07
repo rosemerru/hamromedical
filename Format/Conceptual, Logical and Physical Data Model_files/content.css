@@ -1,0 +1,40 @@
+.vpdoc, .vpdoc td, .vpdoc pre, .vpdoc span.notranslate {color:#000; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; line-height: 16px; color: #404040; }
+.vpdoc ol { list-style-type: decimal; }
+.vpdoc ul { list-style-type: disc; }
+
+.vpdoc h1, .vpdoc h1 span.notranslate {font-size: 24px; font-weight: bold; color: #202020; padding-bottom: 24px;}
+.vpdoc h2, .vpdoc h2 span.notranslate {font-size: 16px; font-weight: bold; color: #124A9B; padding-top: 18px; }
+.vpdoc h3, .vpdoc h3 span.notranslate {font-size: 14px; font-weight: bold; color: #404040; padding-top: 12px; }
+.vpdoc h4, .vpdoc h4 span.notranslate {font-size: 12px; font-weight: bold; color: #124A9B; padding-top: 12px; }
+.vpdoc h5, .vpdoc h5 span.notranslate {font-size: .83em}
+.vpdoc h6, .vpdoc h6 span.notranslate {font-size: .75em}
+.vpdoc p, .vpdoc p span.notranslate { margin:0; padding-bottom:10px; font-size: 14px; line-height: 20px;}
+.vpdoc a span.notranslate { color: #006CAF }
+.vpdoc img {border:0;}
+.vpdoc table {cursor:default}
+.vpdoc table td, .vpdoc table th {cursor:text}
+.vpdoc ins {border-bottom:1px solid green; text-decoration: none; color:green}
+.vpdoc del {color:red; text-decoration:line-through}
+.vpdoc cite {border-bottom:1px dashed blue}
+.vpdoc acronym {border-bottom:1px dotted #CCC; cursor:help}
+.vpdoc abbr, .vpdoc html\:abbr {border-bottom:1px dashed #CCC; cursor:help}
+.vpdoc blockquote { margin-bottom:0; margin-right:0; margin-top:0; }
+.vpdoc ol, .vpdoc ul { margin: 4px 0 4px 24px; padding: 0 0 0 24px; text-intent: 0; }
+.vpdoc li { padding-bottom: 6px; }
+.vpdoc ol > li, .vpdoc ul > li { margin-left: -4px; padding-left: 3px; }
+
+.vpdoc .noteArea { background-color: #E2E2E2; padding: 12px 18px; margin: 18px 0; }
+.vpdoc .noteLabel { color: #124A9B; font-weight: bold; float: left; height: 100%; }
+
+.vpdoc .caption { font-style: italic; color: #404040; text-align: center; padding: 5px 0 18px 0; }
+
+.vpdoc table.content { border-top: 2px solid #124A9B; border-bottom: 2px solid #124A9B; empty-cells: show; } 
+.vpdoc table.content th { padding: 0 8px; font-weight: bold; color: #202020; text-align: center; line-height: 24px; font-size: 12px; background-color: #EAEAEA;}
+.vpdoc table.content td { padding: 8px; border-top: 1px solid #124A9B; }
+
+.vpdoc .code { margin: 10px 0; border: 1px solid #999999; font-family:"Courier New","Dialog","Arial"; font-size:9pt; padding: 10px; }
+.vpdoc span.keyword { color:#7F0055; font-weight:bold; }
+.vpdoc span.comment { color:#3F7F5F; }
+.vpdoc span.xmltag { color:#000080; font-weight:bold; }
+.vpdoc span.xmlattr { color:#000080; }
+.vpdoc span.xmltagvalue { color:#008000; }

@@ -1,0 +1,63 @@
+/*============================
+jcarousel
+skin styles
+============================*/
+
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+	height: 92px;
+	width: 643px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+	height: 92px;
+	width: 643px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+	height: 88px;
+	margin: 0 11px;
+	width: 139px;
+}
+
+.jcarousel-skin-tango .jcarousel-item:hover {
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+    margin-right: 8px;
+}
+
+/*-- Buttons --*/
+
+.jcarousel-skin-tango .jcarousel-next-horizontal,
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+	height: 13px;
+	top: -20px;
+	width: 6px;
+	}
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    background: transparent url(../images/products/arrows.png) no-repeat -6px 0;
+    cursor: pointer;
+    position: absolute;
+	right: 14px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover {
+	background-position: -6px -13px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    background: transparent url(../images/products/arrows.png) no-repeat 0 0;
+    cursor: pointer;
+    position: absolute;
+	right: 30px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover {
+    background-position: 0 -13px;
+}
+
+/* style for products */
+ul.Products li {
+	border: 1px solid #bababa;
+	}

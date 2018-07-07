@@ -1,0 +1,497 @@
+html { background-color: white; }
+.site-search { padding: 0; }
+div.leftMenu {
+	width: 245px; 
+	float: left;
+}
+div.leftMenuHeader {
+	background: url('https://cdn.visual-paradigm.com/support/user_guide_menu.png') no-repeat 0px 0px; 
+	height: 30px;
+	line-height: 30px;
+	padding-left: 12px;
+}
+div.leftMenuFooter {
+	background: url('https://cdn.visual-paradigm.com/support/user_guide_menu.png') no-repeat -500px 0px; 
+	height: 9px;
+}
+div.leftMenuMiddle {
+	background: url('https://cdn.visual-paradigm.com/support/user_guide_menu.png') repeat-y -250px 0px;
+}
+div.leftMenuMiddle div.scrollable {
+/*	
+	max-height: 300px;
+	_height: 300px;
+*/	
+	margin: 0 4px;
+	overflow-y: auto
+}
+
+.rightMenu { float: right; width: 320px; margin-right: 4px; }
+
+#vpProductGrid h1 { margin-left: 10px; margin-bottom: 16px; }
+.hideBlock .vpsuiteProductBlock-header { background-image: none !important; }
+.hideBlock .vpsuiteProductBlock-footer { visibility: hidden; }
+.hideBlock .vpsuiteProductBlock-contentblock p { visibility: visible !important; display: block !important; }
+.hideBlock .vpsuiteProductBlock-contentblock .h3-gray3 { *zoom: 100%; }
+
+.vpsuiteBlock-header { background: url('https://cdn.visual-paradigm.com/vp_product_vpsuite_bg.gif') no-repeat left top; height: 7px; _overflow: hidden;}
+.vpsuiteBlock-middle { background: url('https://cdn.visual-paradigm.com/vp_product_vpsuite_bg.gif') repeat-y -650px top; width:642px ; background-color: #F2F2F2; padding-bottom: 48px; }
+.vpsuiteBlock-footer { background: url('https://cdn.visual-paradigm.com/vp_product_vpsuite_bg.gif') no-repeat -1300px top; height: 14px; _overflow: hidden; }
+
+.contactusBlock-header { background: url('https://cdn.visual-paradigm.com/support/contact_block_bg.gif') no-repeat left top; height: 12px; _overflow: hidden;}
+.contactusBlock-middle { background: url('https://cdn.visual-paradigm.com/support/contact_block_bg.gif') repeat-y -320px top; background-color: #F2F2F2; padding: 0 18px; }
+.contactusBlock-footer { background: url('https://cdn.visual-paradigm.com/support/contact_block_bg.gif') no-repeat -640px top; height: 14px; _overflow: hidden; }
+.contactusItem { margin: 12px 0 24px; }
+.contactusItem .contactus_buttons { float: left; }
+.contactusItem .contactus_content { margin-left: 60px; }
+
+.contactusBlock-middle div.tooltip { display:none; width:266px; }
+.contactusTooltipBlock-header { background: url('https://cdn.visual-paradigm.com/support/contact_us_popup_bg.png') no-repeat center top; height: 12px; _overflow: hidden;}
+.contactusTooltipBlock-middle { background: url('https://cdn.visual-paradigm.com/support/contact_us_popup_bg.png') repeat-y center center; padding: 0 24px 0 13px; color: white;  }
+.contactusTooltipBlock-footer { background: url('https://cdn.visual-paradigm.com/support/contact_us_popup_bg.png') no-repeat center bottom; height: 14px; _overflow: hidden; }
+
+.vpsuiteProductBlock {	width: 306px; padding-bottom: 5px; float: left; margin-left: 10px; _display: inline; }
+.vpsuiteProductBlock-header { background: url('https://cdn.visual-paradigm.com/vp_product_vpsuite_block.gif') no-repeat 0 top; padding: 7px 14px 0 12px; }
+.vpsuiteProductBlock-footer { background: url('https://cdn.visual-paradigm.com/vp_product_vpsuite_block.gif') no-repeat -310px bottom; padding: 7px 14px 14px 24px; }
+.vpsuiteProductBlock-contentblock { width: 134px; float: left; margin-bottom: 12px;}
+
+.supportResourceBlock { background: url('https://cdn.visual-paradigm.com/support/support_res_block.png') no-repeat #F7F7F7; width: 280px; float: left; height:88px; margin-right: 16px; margin-top: 10px; padding: 8px 16px 0 16px; }
+.supportResourceBlock .support_help_buttons { float: left; }
+.supportResourceBlock-content { margin-left: 76px; } 
+
+#contentWrapper { margin-right: 0px; }
+#contentWrapper .leftMenu {  margin-top: 9px; _margin-right: 12px; }
+#contentWrapper .mainContent { margin-left: 260px; _position: static; _margin-left: 0px; _overflow-x: auto; }
+
+.doc-block { border: 1px solid #EFEFEF; margin-top: 25px; padding: 21px 0 25px 30px; background: url('https://cdn.visual-paradigm.com/support/datasheet.png') no-repeat 30px 25px #F9F9F9; font-size: 14px; overflow-y: auto; }
+.doc-block h2 { font-size: 20px; font-weight: 700; color: black; margin-bottom: 4px; }
+.doc-block .doc-info { width: 656px; float: left; position: relative; }
+.doc-block .doc-info a { text-indent: 40px; display: block; height: 40px; }
+.doc-block .doc-info p { position: absolute; left: 40px; top: 28px; }
+.doc-block .doc-download { margin-top: 20px; }
+.doc-block .doc-download a { background: url('https://cdn.visual-paradigm.com/support/download-docs-icon.png') no-repeat 0 2px; padding-left: 15px; line-height: 22px; }
+.doc-block .infoLabel { color: #000000; float: right; width: 128px; text-align: left; font-size: 14px; line-height: 22px; }
+
+.support-footer-block { float: left; width: 272px; height: 142px; margin-right: 80px; position: relative; }
+.support-footer-block a { display: block; color: #0074d9; font-size: 18px; height: 36px; background-repeat: no-repeat; background-position: 0 2px; }
+.support-footer-block p { font-size: 12px; position: absolute; top: 24px; left: 0; }
+.support-footer-block-ticket a { padding-left: 46px; }
+.support-footer-block-ticket p { margin-left: 46px; }
+.support-footer-block-callback { width: 262px; }
+.support-footer-block-callback a { padding-left: 35px; }
+.support-footer-block-callback p { margin-left: 35px; }
+.support-footer-block-forum { margin-right: 0; width: 284px; }
+.support-footer-block-forum a { padding-left: 59px; }
+.support-footer-block-forum p { margin-left: 59px; }
+.support-footer-block-ticket a { background-image: url('https://cdn.visual-paradigm.com/support/support-icon.png'); }
+.support-footer-block-callback a { background-image: url('https://cdn.visual-paradigm.com/support/call-me-back.png'); }
+.support-footer-block-forum a { background-image: url('https://cdn.visual-paradigm.com/support/community-icon.png'); }
+
+#documentSectionList span.fakeAnchor { font-size: 12px; }
+div.documentChapterHeader2 span.fakeAnchor { font-size: 14px !important; font-weight: bold; }
+div.documentChapterHeader2 .sectionBlock { padding-left: 12px; padding-top: 4px; display: none }
+div.documentChapterHeader2 .sectionBlock p { margin-top: 4px; }
+div.documentChapterHeader2 .chapterListItem { padding-top: 18px; } 
+
+.userGuidePart { font-size: 18px; font-weight: bold; color: #404040; }
+
+a.userGuideChapter { font-size: 16px; font-weight: bold; color: #124A9B; }
+a.userGuideChapter:hover { color: #1c4575; }
+
+a.userGuideSection { font-size: 14px; font-weight: bold; color: #124A9B; }
+a.userGuideSection:hover { color: #1c4575; }
+
+a.userGuideFooter { font-size: 14px; color: #1C4575; } 
+
+.partListItem, .chapterListItem { padding-top: 24px; position: relative; }
+.partListItem img , .chapterListItem img { 	position: absolute; right: 0; }
+	
+a.userGuideTopic { font-size: 18px; font-weight: bold; color: #404040; }
+a.userGuideTopic:hover { color: #1C4575; }
+
+.userGuideMenuPart { font-size: 14px; color: #404040; font-weight: bold; padding-top: 14px; }
+.userGuideMenuPart a { color: #1C4575; font-size: 14px; }
+
+.userGuideMenuChapter { font-size: 12px; color: #404040; font-weight: bold; padding-top: 14px; }
+.userGuideMenuChapter a { color: #1C4575; font-size: 12px; }
+
+blockquote.userGuideMenuSection { padding-left: 10px; }
+blockquote.userGuideMenuSection p { font-size: 12px; color: #404040; padding-top: 9px; }
+blockquote.userGuideMenuSection p a { color: #1C4575; font-size: 12px; }
+
+.contactus_buttons img { background-image: url('https://cdn.visual-paradigm.com/support/contact_us_buttons_gray.png'); height: 48px; width: 48px; }
+.technical_support img { background-position: -48px 0px; }
+.live_help img { background-position: 0 0; }
+.callback_support img { background-position: -144px 0px; }
+.sales_support img { background-position: -48px 0px; }
+.bug_report img { background-position: -192px 0px; }
+.feature_suggest img { background-position: -96px 0px; }
+
+.support_buttons img {
+	background-image: url('https://cdn.visual-paradigm.com/support/support_buttons.png');
+	height: 18px;	width: 18px;
+}
+.printer_friendly img {	background-position: -9px -9px; }
+.pdf_format img {	background-position: -9px -45px; }
+.send_email img {	background-position: -9px -90px; }
+
+#supportdeliver .colLeft { float: left; }
+#supportdeliver .colRight { float: right; margin-left: 24px; }
+#supportdeliver div {	width: 200px; }
+.soft_main_email, .soft_main_livehelp, .soft_main_flash, .soft_main_sec_session, .soft_main_phone, .soft_main_upgrade {
+	background-image: url('https://cdn.visual-paradigm.com/support/maintenance_support.jpg');
+	background-repeat: no-repeat; 
+	padding-left: 114px;
+}
+.soft_main_email { background-position: 0px 16px; }
+.soft_main_livehelp {	background-position: 0 -184px; }
+.soft_main_flash { background-position: 0 -384px; }
+.soft_main_sec_session { background-position: 0 -584px; margin-bottom: 100px; }
+.soft_main_phone { background-position: 0 -784px; }
+.soft_main_upgrade { background-position: 0 -1000px; }
+
+#supportHeader {	background: url('https://cdn.visual-paradigm.com/support/support_border.gif') no-repeat 0px 0px; height: 26px; }
+#supportMiddle {	background: url('https://cdn.visual-paradigm.com/support/support_border.gif') repeat-y -710px 0px; }
+#supportFooter {	background: url('https://cdn.visual-paradigm.com/support/support_border.gif') no-repeat -1420px 0px;	height: 26px; }
+
+#supportMiddle p { margin-top: 12px; }
+#supportMiddle p.h1, #supportMiddle h2.h1 { margin-top: 36px; }
+#supportMiddle p.h3 { margin-top: 16px; }
+#supportMiddle .sectionExpander { cursor: pointer; }
+
+.licTypeTable { margin-left: 14px; display: none; margin-top: 12px; }
+.licTypeTable div { margin: 0 2px 12px; }
+.licTypeTable div .borderless-checkbox { margin-left: 20px; margin-right: 5px; }
+.licTypeTable table th, .licTypeTable table td { border-right: 1px solid white; padding: 0 12px;}
+.licTypeTable table thead th, .licTypeTable table thead td { text-align: center; color: white; background-color: #808080; }
+.licTypeTable table thead td.tableHead { padding-top: 2px; padding-bottom: 0 }
+.licTypeTable table thead td { border: none; padding-bottom: 2px; }
+.licTypeTable table tbody th { width: 106px; }
+.licTypeTable table tbody td { text-align: right; font-weight: bold; height: 24px; } 
+
+#contactSupportHead, #contactSupportBody, #contactSupportFoot {	background: url('https://cdn.visual-paradigm.com/support/support_menu_bg.png'); width: 220px; margin: 0 3px; padding: 0 12px; }
+#contactSupportHead { background-repeat: no-repeat; height: 30px; line-height: 30px; color: #E0E0E0; background-color: #6D787E; }
+#contactSupportBody { background-repeat: repeat-y; background-position: -250px 0; }
+#contactSupportFoot { background-repeat: no-repeat; height: 10px; background-position: -500px bottom; }
+#contactSupportBody ul { padding-top: 8px; padding-bottom: 12px; }
+#contactSupportBody ul li { padding-top: 4px; }
+
+.support_icon {
+	background: url('https://cdn.visual-paradigm.com/support/support_block_item.gif') no-repeat;
+	line-height: 28px;
+	padding-left: 40px;
+	display: block;
+
+}
+.technical_support_icon {	background-position: 0px -60px; }
+.live_help_support_icon {	background-position: 0px -120px; }
+.call_me_support_icon {	background-position: 0px 0px; }
+.sales_support_icon {	background-position: 0px -60px; }
+
+.billBoard-support { width: 453px; height: 266px; background-repeat: no-repeat; padding: 8px 12px 0 242px; position:relative; }
+.billBoard-support-vp { background-image: url('https://cdn.visual-paradigm.com/support/vpuml_100_support_bg.png'); }
+.billBoard-support-ag { background-image: url('https://cdn.visual-paradigm.com/support/ag_100_support_bg.png'); }
+.billBoard-support-lz { background-image: url('https://cdn.visual-paradigm.com/support/bpva_100_support_bg.png'); }
+.billBoard-support-vpts { background-image: url('https://cdn.visual-paradigm.com/support/vpts_100_support_bg.png'); }
+.billBoard-support-sdenb,
+.billBoard-support-sdeij,
+.billBoard-support-sdevs,
+.billBoard-support-sdeec { background-image: url('https://cdn.visual-paradigm.com/support/sde_support_bg.png'); }
+.billBoard-support-dbvaec,
+.billBoard-support-dbvanb,
+.billBoard-support-dbvaij,
+.billBoard-support-dbvavs,
+.billBoard-support-dbva { background-image: url('https://cdn.visual-paradigm.com/support/dbva_support_bg.png'); }
+.billBoard-support-a3platform { background-image: url('https://cdn.visual-paradigm.com/support/a3platform_support_bg.png'); }
+.billBoard-support h1 { height: 60px; margin-bottom: 14px; }
+.billBoard-support-build { position:absolute; top: 66px; left: 242px; }
+.billBoard-support-sdeec h1,
+.billBoard-support-sdenb h1,
+.billBoard-support-dbvaec h1,
+.billBoard-support-dbvanb h1,
+.billBoard-support-ag h1,
+.billBoard-support-a3platform h1 { height: 50px; margin-bottom: 0; }
+.billBoard-support-sdeec .billBoard-support-build,
+.billBoard-support-sdenb .billBoard-support-build,
+.billBoard-support-dbvaec .billBoard-support-build,
+.billBoard-support-dbvanb .billBoard-support-build,
+.billBoard-support-ag .billBoard-support-build,
+.billBoard-support-a3platform .billBoard-support-build { top: 40px; }
+
+#releaseNotesSupportHead, #releaseNotesSupportBody, #releaseNotesSupportFoot {	background: url('https://cdn.visual-paradigm.com/support/release_notes_bg.png'); width: 197px; padding: 0 12px 0 20px; }
+#releaseNotesSupportHead { background-repeat: no-repeat; height: 18px; }
+#releaseNotesSupportBody { background-repeat: repeat-y; background-position: -230px 0; }
+#releaseNotesSupportFoot { background-repeat: no-repeat; height: 18px; background-position: -460px bottom; }
+
+#tipsSupportHead, #tipsSupportBody, #tipsSupportFoot {	background: url('https://cdn.visual-paradigm.com/support/tips_tricks_bg.png'); width: 448px; padding: 0 12px; }
+#tipsSupportHead { background-repeat: no-repeat; height: 18px; }
+#tipsSupportBody { background-repeat: repeat-y; background-position: -480px 0; }
+#tipsSupportFoot { background-repeat: no-repeat; height: 18px; background-position: -960px bottom; }
+
+#linksSupportHead, #linksSupportBody, #linksSupportFoot {	background: url('https://cdn.visual-paradigm.com/support/links_bg.png'); width: 667px; padding: 0 20px; }
+#linksSupportHead { background-repeat: no-repeat; height: 18px; }
+#linksSupportBody { background-repeat: repeat-y; background-position: -710px 0; }
+#linksSupportFoot { background-repeat: no-repeat; height: 18px; background-position: -1420px bottom; }
+
+#linksSupportBody .leftLinkBlock { float: left; width: 322px; margin-bottom: 16px; }
+#linksSupportBody .rightLinkBlock { float: right; margin-left: 18px; width: 326px; margin-bottom: 16px; }
+#linksSupportBody .contentPoint { padding-top: 8px; }
+#linksSupportBody .contentPoint li { padding-bottom: 12px; }
+
+#linksSupportBody .tutorialLinks a {
+	background-image: url('https://cdn.visual-paradigm.com/vpuml/provides_71_icon.png');
+	background-repeat: no-repeat;
+	display: block;
+	padding: 0 0 20px 50px;
+	margin-top: 12px;
+}
+
+#linksSupportBody .tutorialLinks .tutorialLinks-bpmodeling {	background-position: 0px 0px; }
+
+#linksSupportBody .tutorialLinks .tutorialLinks-codedbeng {	background-position: 0px -68px; }
+#linksSupportBody .tutorialLinks .tutorialLinks-dbmodeling {	background-position: 0px -104px; }
+#linksSupportBody .tutorialLinks .tutorialLinks-diagramtools {	background-position: 0px -140px; }
+#linksSupportBody .tutorialLinks .tutorialLinks-docgen {	background-position: 0px -176px; }
+
+
+#linksSupportBody .tutorialLinks .tutorialLinks-interop {	background-position: 0px -248px; }
+#linksSupportBody .tutorialLinks .tutorialLinks-mindmap {	background-position: 0px -284px; }
+#linksSupportBody .tutorialLinks .tutorialLinks-modelingtools {	background-position: 0px -320px; }
+#linksSupportBody .tutorialLinks .tutorialLinks-reqmodeling {	background-position: 0px -392px; }
+#linksSupportBody .tutorialLinks .tutorialLinks-screenshots {	background-position: 0px -428px; }
+#linksSupportBody .tutorialLinks .tutorialLinks-standards {	background-position: 0px -464px; }
+#linksSupportBody .tutorialLinks .tutorialLinks-teamwork {	background-position: 0px -500px; }
+#linksSupportBody .tutorialLinks .tutorialLinks-umlmodeling {	background-position: 0px -536px; }
+
+.tipntrick { float:left; width: 188px; margin-right: 8px; margin-left: 12px; }
+.tipntrick img { display: block; border: 1px solid black }
+#productTipsnTricks { margin-top: 8px; }
+#productTipsnTricks .scroll-prev { cursor: pointer; float: left; height: 12px; margin-top: 54px; margin-right: 6px; }
+#productTipsnTricks .scroll-next { cursor: pointer; float: left; height: 12px; margin-top: 54px; margin-left: 6px; }
+#productTipsnTricks .disabled { background-position: 1000px 1000px; cursor: default; }
+
+.support-billboard-item { padding-left:40px; margin-top:8px; }
+.forum36 { background: url('https://cdn.visual-paradigm.com/support/forum36.png') no-repeat; }
+.faq36 { background: url('https://cdn.visual-paradigm.com/support/faq36.png') no-repeat; }
+.vpupdate32 { background: url('https://cdn.visual-paradigm.com/support/vpupdate_white32.png') no-repeat; }
+.vp_user_guide36 { background: url('https://cdn.visual-paradigm.com/support/vpuml_user_guide_book36.png') no-repeat; }
+.ag_user_guide36 { background: url('https://cdn.visual-paradigm.com/support/ag_user_guide_book36.png') no-repeat; }
+.lz_user_guide36 { background: url('https://cdn.visual-paradigm.com/support/bpva_user_guide_book36.png') no-repeat; }
+.vpts_user_guide36 { background: url('https://cdn.visual-paradigm.com/support/vpts_user_guide_book36.png') no-repeat; }
+.sdeec_user_guide36,
+.sdenb_user_guide36,
+.sdeij_user_guide36,
+.sdevs_user_guide36,
+.sde_user_guide36 { background: url('https://cdn.visual-paradigm.com/support/sde_user_guide_book36.png') no-repeat; }
+.dbvaec_user_guide36,
+.dbvanb_user_guide36,
+.dbvaij_user_guide36,
+.dbvavs_user_guide36,
+.dbva_user_guide36 { background: url('https://cdn.visual-paradigm.com/support/dbva_user_guide_book36.png') no-repeat; }
+.a3platform_user_guide36 { background: url('https://cdn.visual-paradigm.com/support/a3platform_user_guide_book36.png') no-repeat; }
+.a3platform_install_guide36 { background: url('https://cdn.visual-paradigm.com/support/a3platform_install_guide_book36.png') no-repeat; }
+
+.leftMenu #contactSupportHead, .leftMenu #contactSupportBody, .leftMenu #contactSupportFoot {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+#releaseHistories li { margin-top: 4px; }
+#releaseHistories .releaseBranch { margin-left: 32px; }
+#releaseNotesDetail .h2 { margin-bottom: 8px; }
+
+.formHeader, .formMiddle, .formFooter {
+	width: 707px;
+	background: url('https://cdn.visual-paradigm.com/shop/form_bg.gif') no-repeat;
+}
+.formHeader { height: 18px }
+.formMiddle { background-repeat: repeat-y; background-position: -710px 0; width: 647px; padding: 0 30px; overflow-y: auto; }
+.formFooter { background-position: -1420px bottom; height: 24px; }
+.formMiddle p.content { margin-top: 10px; }
+.formMiddle table td { padding-top: 8px; vertical-align: top;}
+.formMiddle .fieldset { margin-bottom: 36px; padding-bottom: 12px; }
+.formMiddle .formTable { margin: 8px 12px 0 12px; }
+
+#new_features h3 { margin: 0; }
+#enhanced_features h3 { margin: 0; }
+#revamped_features h3 { margin: 0; }
+
+#new_features .release-feature { margin-bottom: 24px; }
+#enhanced_features .release-feature { margin-bottom: 24px; }
+#revamped_features .release-feature { margin-bottom: 24px; } 
+
+.includeHotTopicBlock-productdoc { padding: 0 10px 0 18px; width: 216px; }
+.includeHotTopicBlock-productdoc img { width: 54px; height: 72px; }
+.includeHotTopicBlock-productdoc .logo-lz img { background: url('https://cdn.visual-paradigm.com/logos/logizian_logo48_reflect.png'); }
+.includeHotTopicBlock-productdoc .logo-vp img { background: url('https://cdn.visual-paradigm.com/logos/vp_logo48_reflect.png'); }
+
+.vpdoc #shareThis { height: 20px; }
+
+.page-support-product-index-retired .round-shadow-box2 { padding: 21px; }
+.page-support-product-index-retired .round-shadow-box2-white { width: 307px; margin-top: 12px; padding: 10px 21px 18px; height: 138px; }
+.page-support-product-index-retired .round-shadow-box2-white .support-billboard-item { margin-top: 10px; }
+.page-support-product-index-retired .switch-logos { background: url('https://cdn.visual-paradigm.com/products/merge_arrow.png') no-repeat 292px 8px; margin: 24px 84px 48px 0; height: 64px; }
+.page-support-product-index-retired .h1-gray2 { margin-bottom: 9px; }
+.page-support-product-index-retired h2.changes { color: #a51c1c; }
+.page-support-product-index-retired h2.unchanges { color: #1fa022; }
+.page-support-product-index-retired .switch-content { width: 318px; margin-bottom: 28px; }
+.page-support-product-index-retired .switch-content .contentPoint .h2-gray2 { margin: 0 0 2px 0; }
+.page-support-product-index-retired .switch-content .contentPoint p { margin-bottom: 16px; }
+
+.sectionTitle small { color: #808080; }
+
+.support-index .supportResourceBlock { float: none; background: url('https://cdn.visual-paradigm.com/support/support_res_block2.png') no-repeat #F7F7F7; width: 289px; }
+#vpProductGrid .contactusBlock-header-left { background: url('https://cdn.visual-paradigm.com/vp_product_vpsuite_bg.gif') no-repeat left top; }
+#vpProductGrid .contactusBlock-middle-left { background: url('https://cdn.visual-paradigm.com/vp_product_vpsuite_bg.gif') repeat-y -650px top; }
+#vpProductGrid .contactusBlock-footer-left { background: url('https://cdn.visual-paradigm.com/vp_product_vpsuite_bg.gif') no-repeat -1300px top; }
+
+
+
+.centerPageTitle { margin-top: 70px; font-size: 32px; text-align: center; font-weight: 300; }
+.centerPageDesc { margin-top: 18px; text-align: center; font-size: 18px; font-weight: 300; color: #606060; }
+
+.resourceList { overflow-y: auto; width: 654px; margin: 0 auto; text-align: center; }
+.resourceList li { float: left; margin: 10px 0 0; }
+.resourceList li a { display: block; width: 130px; padding: 12px 0; }
+.resourceList .resource-icon { width: 52px; height: 52px; border-radius: 32px; background-color: white; border: 2px solid #0074d9; background-repeat: no-repeat; display: block; background-position: center center; margin: 0 auto 13px; }
+.resourceList .resource-link { font-size: 18px; font-weight: 700; color: #404040; }
+.resourceList .resource-desc { font-size: 14px; font-weight: 300; color: #606060; margin-top: 4px; }
+.resourceList .userguide-resource .resource-icon { background-image: url('https://cdn.visual-paradigm.com/support/guide-blue-icon-small.png'); }
+.resourceList .youtube-resource .resource-icon { background-image: url('https://cdn.visual-paradigm.com/support/play-video-blue-icon-small.png'); }
+.resourceList .forum-resource .resource-icon { background-image: url('https://cdn.visual-paradigm.com/support/forum-blue-icon-small.png'); }
+.resourceList .knowhow-resource .resource-icon { background-image: url('https://cdn.visual-paradigm.com/support/knowhow-blue-icon-small.png'); }
+.resourceList .faq-resource .resource-icon { background-image: url('https://cdn.visual-paradigm.com/support/faq-blue-icon-small.png'); }
+
+.support-index .supportFormTitle { font-size: 18px; font-weight: 300; text-align: center; border-bottom: 1px solid #ebebeb; padding-bottom: 10px; margin-bottom: 15px; }
+.support-index .form-layout label { margin-top: 25px; }
+.support-index .form-layout .select-dropdown { margin-top: 15px; }
+.support-index .form-layout .field { width: 1132px; margin-top: 25px; }
+.support-index .form-layout .supportFormValueColumn { padding-top: 10px; }
+
+.required::-webkit-input-placeholder { /* WebKit browsers */
+    color: #FF0000;
+}
+.required:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #FF0000;
+}
+.required::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #FF0000;
+}
+.required:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #FF0000;
+}
+.support-index .directory-datasheet { background-image: url('https://cdn.visual-paradigm.com/vp/dl_datasheet_dir_light.png'); }
+
+body.softwareMaintenancePage { height: auto !important; }
+.softwareMaintenancePage .contentBlockHeader { 
+	margin-top: 16px;
+	border: 1px solid #C0C0C0; border-bottom: none;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+	height: 300px;
+	background-color: #25A2AF; background-image: url("https://cdn.visual-paradigm.com/support/umbrella.png"); background-repeat: no-repeat; background-position: 153px 68px;
+	padding-left: 371px;
+}
+.softwareMaintenancePage .contentBlockHeader .headerDesc { font-size: 24px; color: #FFFFFF; margin-top: 87px; margin-right: 98px; }
+.softwareMaintenancePage .contentBlockHeader .headerDesc2 { font-size: 16px; color: #404040; margin-top: 12px; margin-right: 98px; }
+.softwareMaintenancePage .contentBlock { border: 1px solid #C0C0C0; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-top: none; background-color: #FFFFFF; }
+.softwareMaintenancePage .contentBlock .itemLayer { height: 48px; background-color: #346166; }
+.softwareMaintenancePage .contentBlock .itemLayer ul { width: 558px; margin: 0 auto; }
+.softwareMaintenancePage .contentBlock .itemLayer ul li { float: left; width: 186px; line-height: 48px; text-align: center; }
+.softwareMaintenancePage .contentBlock .itemLayer ul li a { font-size: 24px; color: #FFFFFF; }
+.softwareMaintenancePage .contentBlock .sectionTitle2 { font-size: 36px; color: #346166; text-align: center; }
+.softwareMaintenancePage .contentBlock .sectionDesc2 { font-size: 16px; color: #404040; text-align: center; margin: 9px auto 25px; width: 598px; }
+.softwareMaintenancePage .contentBlock .itemBlock { padding: 64px; }
+.softwareMaintenancePage .contentBlock .benefitsBlock ul { margin-top: 64px; }
+.softwareMaintenancePage .contentBlock .benefitsBlock .itemBlockItem { width: 391px; float: left; }
+.softwareMaintenancePage .contentBlock .benefitsBlock .priorityItem,
+.softwareMaintenancePage .contentBlock .benefitsBlock .ticketItem { margin-left: 64px; }
+.softwareMaintenancePage .contentBlock .benefitsBlock .expertiseItem,
+.softwareMaintenancePage .contentBlock .benefitsBlock .ticketItem,
+.softwareMaintenancePage .contentBlock .benefitsBlock .assistanceItem { margin-top: 24px; }
+.softwareMaintenancePage .contentBlock .benefitsBlock .itemBlockItem .itemImage { background: url("https://cdn.visual-paradigm.com/support/benefits.png"); width: 64px; height: 64px; margin-right: 24px; margin-top: 16px; float: left; }
+.softwareMaintenancePage .contentBlock .benefitsBlock .itemBlockItem .sectionTitle3 { font-size: 18px; color: #346166; margin-left: 88px; margin-top: 0; }
+.softwareMaintenancePage .contentBlock .benefitsBlock .itemBlockItem .sectionDesc3 { font-size: 14px; color: #404040; margin-left: 88px; margin-top: 9px; }
+.softwareMaintenancePage .contentBlock .benefitsBlock .priorityItem .itemImage { background-position: 0 -64px; }
+.softwareMaintenancePage .contentBlock .benefitsBlock .expertiseItem .itemImage { background-position: 0 -128px; }
+.softwareMaintenancePage .contentBlock .benefitsBlock .ticketItem .itemImage { background-position: 0 -192px; }
+.softwareMaintenancePage .contentBlock .benefitsBlock .assistanceItem .itemImage { background-position: 0 -256px; }
+.softwareMaintenancePage .contentBlock .pricingBlock { background-color: #E5F6F9; padding: 64px 0 40px; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productSelectionList { margin-top: 48px; height: 48px; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productSelectionList .productItem { width: 423px; text-align: center; float: left; line-height: 48px; font-size: 18px; color: #202020; cursor: pointer; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productSelectionList .productItem.selected { 
+	cursor: default;
+	background-color: #FFFFFF;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+}
+.softwareMaintenancePage .contentBlock .pricingBlock .productSelectionList .productItem .logoImage { margin-right: 9px; vertical-align: middle; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productSelectionList .productItem .productName { display: inline-block; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable { 
+	background-color: #FFFFFF; width: 696px; margin: 0 auto;
+	-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px;
+}
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable .priceDetail { padding: 18px 0 16px; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable .priceDetail .priceDetailDesc { text-align: center; font-size: 18px; color: #346166; margin-top: 6px;}
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable .priceDetail .editionSelectionList { margin: 30px 30px 36px; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable .priceDetail .editionSelectionList .editionItem { float: left; border-left: 1px solid #808080; text-align: center; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable .priceDetail .editionSelectionList .editionItem:first-child { border-left: none; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable .priceDetail .editionSelectionList .editionItem a { font-size: 20px; color: #404040; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable .priceDetail .editionSelectionList .editionItem .priceDetailPrice { font-size: 24px; font-weight: bold; color: #346166; margin-top: 6px; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable .priceDetail .editionSelectionList .editionItem .priceDetailPrice .additionalPrice { font-size: 12px; color: #606060; margin-top: 3px; font-weight: normal; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable .priceDetail .editionSelectionList .additionalPrice { font-size: 18px; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable #vpPriceDetail .editionSelectionList .editionItem { width: 210px; height: 60px; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable #vptsPriceDetail .editionSelectionList .editionItem { width: 422px; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable .optionCheckbox { margin-right: 3px; margin-left: 16px; vertical-align: middle; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceTable .optionLabel { font-size: 14px; color: #404040; }
+.softwareMaintenancePage .contentBlock .pricingBlock .productPriceAdditionalDesc { margin-top: 25px; margin-left: 8px; font-size: 14px; color: #404040; text-align: center; }
+.softwareMaintenancePage .contentBlock .faqBlock .faqQuestion { font-size: 20px; color: #346166; margin-top: 36px; }
+.softwareMaintenancePage .contentBlock .faqBlock .faqQuestion:first-child { margin-top: 48px; }
+.softwareMaintenancePage .contentBlock .faqBlock .faqQuestion .answerButton { display: inline-block; vertical-align: middle; width: 32px; height: 16px; background: url('https://cdn.visual-paradigm.com/support/faq_button.png') no-repeat; margin-left: 9px; }
+.softwareMaintenancePage .contentBlock .faqBlock .faqQuestion .answerButton:hover { background-position: 0 -16px; }
+.softwareMaintenancePage .contentBlock .faqBlock .faqQuestion .answerButton.answerButtonPressing { background-position: 0 -32px; }
+.softwareMaintenancePage .contentBlock .faqBlock .faqAnswer { font-size: 16px; color: #404040; margin-top: 9px; display: none; }
+
+.softwareMaintenancePage .pricing-switcher {
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.pricing-switcher .fieldset {
+    border: 2px solid #25a2af;
+    border-radius: 50em;
+    display: inline-block;
+    padding: 2px;
+    position: relative;
+}
+.pricing-switcher input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+}
+.pricing-switcher label {
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: 0.8rem;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    width: 90px;
+    z-index: 1;
+}
+.pricing-switcher input[type="radio"]:checked + label + .switch, .pricing-switcher input[type="radio"]:checked + label:nth-of-type(n) + .switch {
+    transform: translateX(90px);
+}
+.pricing-switcher .switch {
+    background-color: #25a2af;
+    border-radius: 50em;
+    height: 40px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    transition: transform 0.5s ease 0s;
+    width: 90px;
+}
+.pricing-switcher .price-single .label-floating { color: #565656; }
+.pricing-switcher .price-floating .label-single { color: #565656; }

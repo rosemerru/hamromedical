@@ -1,0 +1,1 @@
+ window.advBidxc.rtbsheaderBid1({});/*timeout*/ 

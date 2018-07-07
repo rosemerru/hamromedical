@@ -1,0 +1,34 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var buttonStyles = buttonStyles || abTest('buttonStyles');
+    if (buttonStyles === "T-B") {
+        var pageButtons = document.querySelectorAll('.orange-button');
+        pageButtons.forEach(function(element) {
+          element.classList.add('buttonStyles');
+        });
+
+        if (document.body.classList.contains('node-type-fifteen-competitor')
+        || document.body.classList.contains('node-type-fifteen-integration-ppc')
+        || document.body.classList.contains('node-type-fifteen-og')
+        || document.body.classList.contains('node-type-fifteen-og-ppc')) {
+            var findout = document.querySelectorAll('.find-out-btn');
+            findout.forEach(function(element) {
+              element.classList.add('buttonStyles');
+            });
+        }
+
+        if (document.body.classList.contains('node-type-fifteen-og') || document.body.classList.contains('node-type-fifteen-og-ppc')) {
+            var darkLandingButton = document.querySelectorAll('.landing-button');
+            darkLandingButton.forEach(function(element) {
+              element.classList.add('buttonStyles');
+            });
+        }
+
+        if (document.body.classList.contains('node-type-product-ad')) {
+            var darkLandingButton = document.querySelectorAll('.primary.button');
+            darkLandingButton.forEach(function(element) {
+              element.classList.add('buttonStyles');
+            });
+        }
+
+    }
+});

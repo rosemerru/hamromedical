@@ -1,0 +1,630 @@
+.panel-group .panel {
+border-radius: 0;
+box-shadow: none;
+border-color: #EEEEEE;
+}
+
+.panel-default > .panel-heading {
+padding: 0;
+border-radius: 0;
+color: #212121;
+background-color: #FAFAFA;
+border-color: #EEEEEE;
+}
+
+.panel-title {
+font-size: 14px;
+}
+
+.panel-title > a {
+display: block;
+padding: 15px;
+text-decoration: none;
+}
+
+.more-less {
+float: right;
+color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+border-top-color: #EEEEEE;
+}
+
+.services{
+border: 1px solid #c1c1c1;
+display: inline-block;
+width: 30%;
+padding: 9px 6px;
+margin-left: 10px;
+margin-top: 10px;
+text-align: center;
+background-color: #f3f3f3;
+}
+
+
+.module {
+background: url(../images/sam.jpg);
+background-attachment: fixed;
+width: 100%;
+background-repeat: no-repeat;
+height: 300px;
+background-size: cover;
+position: relative;
+overflow: hidden;
+margin: 20px;
+}
+
+.module > header {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 5px;
+background: inherit;
+background-attachment: fixed;
+overflow: hidden;
+}
+
+.module > header::before {
+content: "";
+position: absolute;
+top: -20px;
+left: 0;
+width: 200%;
+height: 200%;
+background: inherit;
+background-attachment: fixed;
+-webkit-filter: blur(4px);
+filter: blur(4px);
+}
+
+.module > header::after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.25)
+}
+
+.module > header > h3 {
+margin: 0;
+color: white;
+position: relative;
+z-index: 1;
+}
+
+.tg-dashboardnav ul li {
+color: #484848;
+display: block;
+padding: 0 20px;
+}
+
+.tg-dashboardnav ul li  span {
+display: inline-block;
+vertical-align: middle;
+}
+
+.tg-dashboardnav ul li:hover {
+color: #02aae8;
+background-color: white;
+}
+
+.tg-dashboardnav ul li  i {
+width: 25px;
+padding: 1px 0 0;
+}
+
+.modal-header {
+padding: 0;
+}
+.modal-header .close {
+padding: 10px 15px;
+}
+.modal-header ul {
+border: none;
+}
+.modal-header ul li {
+margin: 0;
+}
+.modal-header ul li a {
+border: none;
+border-radius: 0;
+}
+.modal-header ul li.active a {
+color: #00a0ac;
+}
+.modal-header ul li a:hover {
+border: none;
+}
+.modal-header ul li a span {
+margin-left: 10px;
+}
+.modal-body .form-group {
+margin-bottom: 10px;
+}
+
+.modal-content {
+padding:10px;
+}
+
+.loginBtn {
+box-sizing: border-box;
+position: relative;
+margin: 0.2em;
+padding: 0 15px 0 46px;
+border: none;
+text-align: left;
+line-height: 34px;
+white-space: nowrap;
+border-radius: 0.2em;
+font-size: 14px;
+color: #FFF;
+}
+
+.loginBtn:before {
+content: "";
+box-sizing: border-box;
+position: absolute;
+top: 0;
+left: 0;
+width: 34px;
+height: 100%;
+}
+
+.loginBtn:focus {
+outline: none;
+}
+
+.loginBtn:active {
+box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+.loginBtn--facebook {
+background-color: #4C69BA;
+background-image: linear-gradient(#4C69BA, #3B55A0);
+text-shadow: 0 -1px 0 #354C8C;
+}
+.loginBtn--facebook:before {
+border-right: #364e92 1px solid;
+background: url('../images/icon_facebook.png') 6px 6px no-repeat;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+background-color: #5B7BD5;
+background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+.loginBtn--google {
+background: #DD4B39;
+}
+.loginBtn--google:before {
+border-right: #BB3F30 1px solid;
+background: url('../images/icon_google.png') 6px 6px no-repeat;
+}
+
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+background: #E74B37;
+}
+
+.or h6 { width:100%; 
+text-align:center;
+border-bottom:1px solid #c7c1c1;
+line-height:0.1em;
+margin:10px 0 20px; } 
+
+.or h6 span { background:#fff; padding:0 10px; 
+}
+
+.modal-content a{
+color:#444;
+}
+
+.hdr{
+background-color: #00a0ac;
+color:white;
+}
+
+.reg{
+font-size: 10px;
+float: right;
+}
+
+.available-locations .tg-servicelocation {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #17a0ab;
+}
+
+.tg-servicelocation {
+    padding-bottom: 31px;
+    border-bottom: 3px solid #f8f8f8;
+}
+.tg-servicelocation:last-child {border-bottom:none;}
+
+.tg-availablelocation .tg-servicelocation .tg-directpost {
+width: 100%;
+}
+
+.tg-availablelocation .tg-servicesinfo {
+width: 100%;
+}
+
+.blood {
+padding-bottom: 30px;
+border-bottom: 0px ;
+}
+.bloodgrp{
+float:right;
+}
+.bloodcard{
+width: 48%;
+border:1px solid #e8e8e8;
+padding :10px;
+border-radius: 10px;
+}
+
+.donarcontact{
+background-color:#01a0ac;
+color:white;
+padding:5px;
+}
+.bloodcard figure{
+margin:0px;
+}
+
+.bloodcard:nth-of-type(odd) {
+margin-right: 10px;
+}
+.donorform{
+border:1px solid #dad8d8;
+border-radius: 10px;
+padding:20px;
+margin-bottom: 30px;
+}
+
+.ftitle{
+background-color: #f8f8f8;
+text-transform: uppercase;
+color:red;
+padding:10px;
+position: absolute;
+z-index: 111;
+margin-top: -21.5px;
+font-weight: bold;
+left:10px;
+font-size:16px;
+}
+
+a, p a, p a:hover, a:hover, a:focus, a:active, .tg-navigation > ul > li.tg-active > a, .tg-navigation ul li a:hover, .tg-guest .tg-message em, .tg-btndropdown:hover, .tg-hasdropdown .tg-hasdropdown:hover:before, .tg-btn:hover, .tg-joinustitle, .tg-dropdownbox time strong, .tg-dropdownbox ul li a:hover, .tg-dropdownbox ul li a:hover i, .tg-newsticker p time, .tg-newsticker p:before, .tg-feature:hover h3 a, .tg-feature:hover .tg-btn, .tg-jobsmetadata li a:hover, .tg-jobsmetadata li a:hover i, .tg-metadata li a:hover, .tg-metadata li a:hover i, .tg-directpost:hover .tg-jobhead h3 a, .tg-email li a:hover, .tg-footernav ul li a:hover, .tg-footernav ul li.tg-active a, .tg-postdate span, .tg-subcategorycheckbox label:hover, .tg-widgetcontent ul li a:hover, .tg-widgetcontent ul li a:hover span, .tg-widgetcontent ul li a:hover i, .tg-navdetailpagetabs li a:hover, .tg-navdetailpagetabs li.active a, .tg-servicesinfo li:hover span i, .tg-widgetcontent ul li .tg-postcontent h5 a:hover, .tg-themelist li:hover, .tg-threecolumns li:hover, .tg-threecolumns li a:hover, .tg-contactdetail li i, .tg-collapsecontent ul li:hover span, .tg-liststyletick li:before, .tg-postdetail blockquote, .tg-dashboardnav ul li.tg-active a, .tg-dashboardnav ul li a:hover, .tg-dashboardnav ul li.tg-active a i, .tg-dashboardnav ul li a:hover i, .tg-refresh.tg-update, .tg-refresh.tg-update:hover, .tg-percentage span, .tg-followers span, .tg-totalviews span, .tg-badgemodalcontent h4, .tg-badgemodalcontent .tg-subtitle, .tg-dashboardtabnav li a:hover, .tg-dashboardtabnav li.active a, .tg-uiicons ul li:hover .fa-pencil, .tg-pkgplanhead h4 span, .tg-countdown .clock-item .text .val, .tg-authorinformation a, .tg-howitworksbox h3, .tg-arrow i.fa, .tg-howitsworktitle h3, .tg-centericons .tg-howitworksbox .tg-servicseakerimg:after, .tg-centericons .tg-howitworksbox .tg-servicseakerimg:before, .tg-post:hover .tg-posttitle h3 a, .tg-listdatastyle li span:first-child:hover, .tg-postdetail .tg-posttitle h3, .fc button .fc-icon:after, .tg-visitreason .tg-rightbox time, .tg-formprogressbar li.tg-active span, .tg-dropdownmenu li.tg-active a, .tg-fcol.tg-specialities ul li a:hover, .tg-fcol.tg-specialities ul li a:hover:after {
+color: #00a0ac;
+}
+
+@media (max-width: 1500px)
+{
+.tg-homebanner {
+height: 500px;
+}
+}
+
+.tg-footerbar {
+background: #443e3e;
+}
+
+@media (max-width: 567px)
+{
+.tg-homebanner1 {
+height: 400px;
+}
+}
+.downld
+{
+width: 80%;
+}
+.bloodgroup{
+position: absolute;
+right: 55px;
+top: 45px;
+}
+
+@media (max-width: 768px) {
+    .bloodcard {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+.bloodgroup{
+position: absolute;
+right: 50%;
+top: 40%;
+}
+
+
+
+}
+
+@media (max-width: 360px)
+{
+.bloodgroup {
+position: absolute;
+right: 50%;
+top: 31%;
+}
+
+}
+
+.navbar-brand{
+    padding: 0px 15px;
+}
+.tg-innerbanner .tg-formsearch fieldset .form-control{width: 46%;}
+.tg-socialiconslarge li{background: #fff;}
+.tg-main {
+    padding: 50px 0;
+}
+
+/*Pagingation*/
+.tg-pagination{margin-top:10px;}
+.tg-pagination ul li.prev a {
+    border-radius: 3px 0 0 3px;
+}
+
+.tg-pagination ul li.next a, .tg-pagination ul li.prev a {
+    color: #fff;
+    background: #484848;
+}
+
+.tg-pagination .current{
+    background: #02aae8;
+}
+
+.tg-pagination span.disabled{
+    display: none;
+}
+
+@media (min-width: 1000px)
+{
+    .tg-directpostimg > a img{
+        width: 120px;
+    }
+}
+
+.doctor-detail .tg-widgetprofile figure img{margin:0 auto;}
+.hospital-detail .tg-widgetprofile figure img{margin:0 auto;}
+.tg-detailpage{margin-bottom:20px;}
+.tg-content img.bloodonor-icon{width:80px;}
+
+
+
+/*Flash Message */
+.flash{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.flash #flashMessage {
+    padding: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 0px;
+    text-align:center;
+    font-size: 20px;
+}
+.flash #authMessage {
+    padding: 20px;
+    margin-bottom: 0px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #FBEED5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-align:center;
+    font-size: 20px;
+}
+.flash .info {
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD;
+}
+.flash .danger,.flash  .error,.flash .message{
+    background-color: #F2DEDE;
+    border-color: #EED3D7;
+    color: #B94A48;
+}
+.flash .success {
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #468847;
+}
+
+.pharma li{
+    list-style: none;
+}
+
+.tg-circleimg> a img{
+    width: 100%;
+}
+.tg-btneye{
+    background:#02aae8;
+}
+.attachments .fa{cursor: pointer;}
+.loading_attachment{margin-left:5px;display: none;}
+.attachment_container{border:1px solid #bbb;
+    padding: 10px 3px;
+    margin: 10px 10px 10px 0px ;
+    display: table;
+    float:left;
+    position: relative;
+}
+.attachment_container span.filesize{
+    position: absolute;
+top:20px;
+left:0px;}
+.attachment_container span.label{vertical-align: center;margin-left: 10px;}
+.attachment_container a.remove_attachment{cursor: pointer;margin-top:-2px;}
+.recommended i{color:red;}
+.tg-homebanner .tg-formsearch fieldset .form-control{
+    width: 40%;
+}
+.tg-subcategories{
+    float: none;
+}
+.tg-timelineblogtitle h3{line-height: 21px;}
+.tg-header{    border-bottom: 2px solid #00a0ac;}
+
+
+
+/* FORUM */
+.forums .tg-directpostimg > a img{
+    width: 50px;
+}
+.forums .tg-directposthead h3{line-height: 4px;}
+.forums .tg-availablelocation{margin-bottom:10px;}
+.forums .tg-availablelocation .tg-servicelocations{padding: 20px 20px 0px;}
+a.forum-select,a.forum-select:hover {
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forums a.user-liked, .forums a.user-favorited{
+    color:#00a0ac;
+}
+.tg-banneradd{margin-top:10px;}
+
+/* PRODUCT PAGE */
+span.price{
+    margin-top: -3px;
+}
+span.original-price{
+    font-size: 22px;
+    margin-top: -10px;
+    text-decoration: line-through;
+    color: red;
+}
+
+.dashboardnotifications .notifications li{
+    padding: 8px 8px;
+    list-style:none;    margin-top: 10px;
+}
+
+.tg-profilewidget{
+    margin: 0 0 15px 0;
+}
+/* Featured Listing */
+.featured_listing{padding-top:0px;padding-bottom: 97px;}
+.featured_listing .tab-pane{margin-top:10px;}
+.tg-directpostimg figcaption{ bottom: 10px;position: absolute;}
+.tg-directpostimg > a {
+    margin: 0;
+}
+.featured_listing .tg-directposts .tg-directpost{min-height: 185px;}
+.featured_listing .tg-directposts .tg-directpost .tg-leftarea{width:270px; padding-top:0px;}
+
+
+
+.tg-btn-theme{
+    background: #01a0ac;
+}
+
+.btn-toastr{background:#fff;color:#000;}
+.forums .tg-metadata li a.user-liked i{color:#00a0ac;}
+
+.top-cta .link{margin-bottom:10px;}
+
+
+div.required label:after {
+    content: " *";
+    color: red;
+}
+
+@media screen and (max-width: 479px) {
+    .tg-homebanner .tg-formsearch fieldset .form-control{
+        width: 100%;
+    }
+    .tg-formsearch .tg-sectionhead{
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 567px){
+    .tg-bannercontent {
+        margin: -195px 0 0;
+    }
+}
+
+ol li{list-style: decimal;}
+ol li ul li{list-style: circle; margin-left:20px;}
+
+.tg-socialarea > span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+/* FORUM */
+@media (max-width: 479px){
+    .tg-directpost .tg-directinfo {
+        width: 70%;
+        margin-left: 15px;
+    }
+    .answerbox{
+        margin-left: 20px !important;
+    }
+}
+
+
+/* CARD VIEW LAYOUT */
+body{background: #f8f8f8;}
+/* .tg-content .tg-directposts .tg-directpost,.card-view{ */
+.card-view{
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 1px 2px 1px hsla(0,0%,43%,.14);
+    padding: 16px !important;
+    margin-bottom: 10px;
+}
+.tg-directposts .tg-directpost + .tg-directpost{
+    padding:none;
+    /*margin-top: 10px;*/
+}
+.doctor-detail{background: #f8f8f8;margin-top:10px; }
+.tg-directposts .tg-directpost{position: relative}
+.ad-sponsored-title a{position: absolute;
+    top: 0px;
+    right: 7px;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #aaa;}
+.tg-availablelocation .tg-servicelocations{background:#f8f8f8;padding:0; }
+.bloodcard{margin-bottom: 10px;}
+.tg-servicelocation + .tg-servicelocation{margin:auto;}
+.doctor-view .tg-contactinfo .tg-subjects{
+    width: 243px;
+    height: 41px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tg-dashboardtabnav li:first-child{
+    border-left: 1px solid #ccc;
+}
+.tg-dashboardtabnav li{
+    border-right: 1px solid #ccc;
+}
+.linkDefault{color:#000;}
+
+.simple-list .tg-servicelocation{
+     margin: 10px 0 0;
+}
+
+.app header, .app footer{
+    display:none;
+}
+div.preloader {
+    display: none;position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: rgba(0, 160, 172, 0.3) url('/img/ajax-loader-circle.gif') no-repeat center center; }

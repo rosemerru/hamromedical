@@ -1,0 +1,131 @@
+/* ----------- Smooth Scroll (Discovery Pages) --------------- */
+(function($) {
+  (function() {
+    var reset_scroll;
+
+    reset_scroll = function() {
+      var scroller;
+      scroller = $("body,html");
+      scroller.stop(true);
+      if ($(window).scrollTop() !== 0) {
+        scroller.animate({
+          scrollTop: 0
+        }, "fast");
+      }
+      return scroller;
+    };
+
+    window.scroll_it = function() {
+      var max;
+      max = $(document).height() - $(window).height();
+      return reset_scroll().animate({
+        scrollTop: max
+      }, max * 3).delay(100).animate({
+        scrollTop: 0
+      }, max * 3);
+    };
+
+    window.scroll_it_wobble = function() {
+      var max, third;
+      max = $(document).height() - $(window).height();
+      third = Math.floor(max / 3);
+      return reset_scroll().animate({
+        scrollTop: third * 2
+      }, max * 3).delay(100).animate({
+        scrollTop: third
+      }, max * 3).delay(100).animate({
+        scrollTop: max
+      }, max * 3).delay(100).animate({
+        scrollTop: 0
+      }, max * 3);
+    };
+
+    $(window).on("resize", (function(_this) {
+      return function(e) {
+        return $(document.body).trigger("sticky_kit:recalc");
+      };
+    })(this));
+
+  }).call(this);
+
+  $('a[href^="#"]').on('click', function(event) {
+      var target = $( $(this).attr('href') );
+      if( target.length ) {
+        event.preventDefault();
+        var nav = $('section.main-nav-bar');
+        var nav_height = nav.outerHeight();
+        $('html, body').animate({
+          scrollTop: target.offset().top - nav_height - 18
+        }, 300);
+      }
+  });
+
+  //Underline on scroll
+  var sections = $('.ds-content-section');
+  var nav = $('section.main-nav-bar');
+  var nav_height = nav.outerHeight();
+  var stickyMenu = $('div.ds-menu');
+
+  $(window).on('scroll', function () {
+    var cur_pos = $(this).scrollTop();
+
+    sections.each(function() {
+      var top = $(this).offset().top - nav_height - 30;
+      var bottom = top + $(this).outerHeight();
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        stickyMenu.find('a').removeClass('active');
+        sections.removeClass('active');
+
+        $(this).addClass('active');
+        stickyMenu.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+      }
+    });
+  });
+
+  /* ---------- Discovery Scroll Depth Analytics block ------------ */
+  $(function() {
+    $.scrollDepth({
+      minHeight: 700,
+      gtmOverride: true
+    });
+  });
+
+
+  /* ---------- Discovery Scroll Nav JS ------------- */
+  var scrollNav = document.getElementById('scroll-nav');
+  var header = document.getElementsByClassName('ds-top')[0];
+  var titlePosition = header.scrollHeight;
+  var active = false;
+
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  }
+
+  var onScrollDebounced = debounce(function() {
+      var scrolled = window.scrollY;
+      if (scrolled > titlePosition && !active) {
+          $('.nav-wrapper').fadeOut();
+          scrollNav.classList.add('active');
+          active = true;
+      }
+      if (scrolled < titlePosition && active) {
+          $('.nav-wrapper').fadeIn();
+          scrollNav.classList.remove('active');
+          active = false;
+      }
+  }, 10);
+
+  window.addEventListener('scroll', onScrollDebounced);
+}(window.jQuery));
